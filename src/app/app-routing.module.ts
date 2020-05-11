@@ -5,7 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { LocationComponent } from './location/location/location.component';
 import { LocationFormComponent } from './location/location-form/location-form.component';
 import { TournamentComponent } from './tournament/tournament.component';
-import { MatchesComponent } from './matches/matches.component';
+import { MatchComponent } from './match/match.component';
+import { TournamentFormComponent } from './tournament-form/tournament-form.component';
 
 
 const routes: Routes = [
@@ -16,9 +17,9 @@ const routes: Routes = [
   { path: 'location/new', component: LocationFormComponent },
   { path: 'location/:id', component: LocationFormComponent },
   { path: 'tournaments', component: TournamentComponent},
-  { path: 'matches', component: MatchesComponent},
-  { path: 'tournaments/new', component: LocationFormComponent },
-  { path: 'tournaments/:id', component: LocationFormComponent }
+  { path: 'tournaments/new', component: TournamentFormComponent },
+  { path: 'tournaments/:id', component: TournamentFormComponent },
+  { path: 'match', component: MatchComponent}
 
 ];
 

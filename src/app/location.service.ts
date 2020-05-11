@@ -22,13 +22,6 @@ export class LocationsService {
     );
   }
 
-  getKindergartenGroups(): Observable<any[]> {
-    return this.http.get<any[]>(environment.apiUrl + + 'locations').pipe(
-      map( data => {
-        return data
-      })
-    );
-  }
 
   submitLocation(location: any) {
     console.log('log iz sevisa',location);

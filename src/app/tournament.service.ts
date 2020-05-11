@@ -36,4 +36,10 @@ export class TournamentService {
     return this.http.put(environment.apiUrl + '/' + id, tournament)
   }
 
+  getOne(id) {
+    console.log(id);
+    
+    return this.http.get(environment.apiUrl + '/tournaments/' + id);
+  }
+
 }

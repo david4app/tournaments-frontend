@@ -10,7 +10,8 @@ import { LocationComponent } from './location/location/location.component';
 import { LocationFormComponent } from './location/location-form/location-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TournamentComponent } from './tournament/tournament.component';
-import { MatchesComponent } from './matches/matches.component';
+import { MatchComponent } from './match/match.component';
+import { TournamentFormComponent } from './tournament-form/tournament-form.component';
 
 
 
@@ -22,7 +23,8 @@ import { MatchesComponent } from './matches/matches.component';
       LocationComponent,
       LocationFormComponent,
       TournamentComponent,
-      MatchesComponent,
+      MatchComponent,
+      TournamentFormComponent,
     ],
     imports: [
       BrowserModule,

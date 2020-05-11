@@ -47,6 +47,6 @@ export class TournamentComponent implements OnInit {
   }
 
    onEdit(tournamentId) {
-    this.router.navigate(['tournamentss', tournamentId]);
+    this.router.navigate(['tournaments', tournamentId]);
   }
 }

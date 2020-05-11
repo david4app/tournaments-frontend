@@ -1,0 +1,24 @@
+<div class="container" style="margin-top: 5%;">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Match date</th>
+            <th>Score</th>
+            <th colspan="2">Functions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let match of matchArray">
+            <td>{{match.match_date}}</td>
+            <td>{{match.score}}</td>
+            <td>
+              <button class="btn btn-secondary" (click)="onEdit(match.id)">Edit</button>
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="deleteMatch(match.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>    
+</div>
+

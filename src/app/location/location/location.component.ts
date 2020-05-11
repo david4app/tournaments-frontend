@@ -32,8 +32,9 @@ export class LocationComponent implements OnInit {
   }
 
   deleteLocation(id) {
-    this.locationservice.deleteLocation(id).subscribe(a => console.log('test delete')
-    )
+    this.locationservice.deleteLocation(id).subscribe(result =>{this.getLocations();
+    });
+    
   }
 
   editLocation(id) {
