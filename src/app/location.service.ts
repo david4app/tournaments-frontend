@@ -24,7 +24,7 @@ export class LocationsService {
 
 
   submitLocation(location: any) {
-    console.log('log iz sevisa',location);
+    console.log('log iz servisa',location);
     
     return this.http.post(environment.apiUrl + '/locations', location);
   }
