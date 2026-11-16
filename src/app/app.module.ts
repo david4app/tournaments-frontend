@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TournamentComponent } from './tournament/tournament.component';
 import { MatchComponent } from './match/match.component';
 import { TournamentFormComponent } from './tournament-form/tournament-form.component';
+import { FilterPipe } from './filter.pipe';
 
 
 
@@ -25,6 +26,7 @@ import { TournamentFormComponent } from './tournament-form/tournament-form.compo
       TournamentComponent,
       MatchComponent,
       TournamentFormComponent,
+      FilterPipe,
     ],
     imports: [
       BrowserModule,

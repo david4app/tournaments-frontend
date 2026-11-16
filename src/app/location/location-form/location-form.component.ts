@@ -23,6 +23,7 @@ export class LocationFormComponent implements OnInit {
       town: [''],
       zip: ['']
   });
+  serviceForm: any;
 
   constructor(private fb: FormBuilder,
               private route: ActivatedRoute,
@@ -62,11 +63,12 @@ export class LocationFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.locationGroup.value);
-    this.locationService.submitLocation(this.locationGroup.value).subscribe(a => console.log('test submit')
-    );
+    this.locationService.submitLocation(this.locationGroup.value).subscribe(a => console.log('test submit'));
+    this.router.navigate(['/location']);
+
   }
   
   cancelForm() {
-    this.router.navigate(['locations']);
+    this.router.navigate(['/location']);
   }
 }

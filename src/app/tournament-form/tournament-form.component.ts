@@ -64,9 +64,10 @@ export class TournamentFormComponent implements OnInit {
     console.log(this.tournamentGroup.value);
     this.tournamentService.submitTournament(this.tournamentGroup.value).subscribe(a => console.log('test submit')
     );
+    this.router.navigate(['/tournaments']);
   }
   
   cancelForm() {
-    this.router.navigate(['tournaments']);
+    this.router.navigate(['/tournaments']);
   }
 }
